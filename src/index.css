@@ -19,7 +19,7 @@ html {
 
 body {
   background: radial-gradient(
-      circle at top,
+      circle at top,  
       rgba(241, 210, 70, 0.98),
       rgba(250, 176, 103, 0.87)
     ),
@@ -347,5 +347,22 @@ ol {
   }
   100% {
     transform: scale(1);
+  }
+}
+
+
+/* Media query for mobile phones */
+@media only screen and (max-width: 768px) {
+  /* Other existing styles... */
+
+  #game-board {
+    max-width: 80%; /* Make game board container 80% of the viewport width */
+    margin: 0 auto; /* Center the game board */
+  }
+
+  #game-board button {
+    width: 4rem; /* Reduce button width */
+    height: 4rem; /* Reduce button height */
+    font-size: 2rem; /* Reduce font size */
   }
 }
